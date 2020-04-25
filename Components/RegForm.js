@@ -112,6 +112,8 @@ State: ${countryState}
       setConfirmpassword('');
       setPhone('');
       setCountrystate('');
+
+      props.navigation.navigate('Confirmation')
     }
   };
 
@@ -137,6 +139,7 @@ State: ${countryState}
                 placeholderTextColor="#FFFFFF"
                 keyboardType={'email-address'}
                 returnKeyType={'next'}
+                autoCapitalize={'none'}
                 value={email}
                 onChangeText={emailHandler}
               />
